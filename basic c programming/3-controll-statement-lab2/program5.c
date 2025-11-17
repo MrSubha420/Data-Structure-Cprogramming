@@ -1,59 +1,63 @@
 /*
 -----------------------------------------------------------
 Problem Statement:
-Write a C program to implement student grade calculation
-based on the following table.
+Write a C program to calculate an employee’s total salary 
+based on performance rating and basic salary.
 
-Grade Criteria:
+Rules:
 -----------------------------------------------------------
-EX  - Marks > 90
-O   - Marks between 80 and 90
-A   - Marks between 70 and 80
-B   - Marks between 60 and 70
-C   - Marks between 50 and 60
-FAIL - Marks < 50
------------------------------------------------------------
+Performance Rating | Bonus Percentage
+-------------------|-----------------
+Above 90           | 25%
+80 – 90            | 20%
+70 – 79            | 15%
+60 – 69            | 10%
+Below 60           | 0%
 
-Input:
-- The program should take CGPA as input from the user.
+If basic salary < 10000 → Add ₹500 allowance.
 
-Process:
-- Calculate marks using the formula:
-      marks = (10 - 0.75) * cgpa
-
-Output:
-- Display the calculated marks and corresponding grade.
+Formula:
+  total_salary = basic + (bonus% of basic) + allowance
 -----------------------------------------------------------
 */
 
 #include <stdio.h>
 
 int main() {
-    float cgpa, marks;
+    float basic, rating, bonus, allowance = 0, total_salary;
 
-    // Input CGPA from user
-    printf("Enter your CGPA: ");
-    scanf("%f", &cgpa);
+    // Input from user
+    printf("Enter Basic Salary: ");
+    scanf("%f", &basic);
+    printf("Enter Performance Rating (0-100): ");
+    scanf("%f", &rating);
 
-    // Calculate marks using the given formula
-    marks = (10 - 0.75) * cgpa;
-
-    // Display calculated marks
-    printf("Calculated Marks: %.2f\n", marks);
-
-    // Determine grade based on marks
-    if (marks > 90)
-        printf("Grade: EX\n");
-    else if (marks >= 80 && marks <= 90)
-        printf("Grade: O\n");
-    else if (marks >= 70 && marks < 80)
-        printf("Grade: A\n");
-    else if (marks >= 60 && marks < 70)
-        printf("Grade: B\n");
-    else if (marks >= 50 && marks < 60)
-        printf("Grade: C\n");
+    // Determine bonus based on performance
+    if (rating > 90)
+        bonus = basic * 0.25;
+    else if (rating >= 80)
+        bonus = basic * 0.20;
+    else if (rating >= 70)
+        bonus = basic * 0.15;
+    else if (rating >= 60)
+        bonus = basic * 0.10;
     else
-        printf("Grade: FAIL\n");
+        bonus = 0;
+
+    // Check for allowance
+    if (basic < 10000)
+        allowance = 500;
+
+    // Calculate total salary
+    total_salary = basic + bonus + allowance;
+
+    // Display details
+    printf("\n---------- Salary Breakdown ----------\n");
+    printf("Basic Salary     : ₹%.2f\n", basic);
+    printf("Performance Bonus: ₹%.2f\n", bonus);
+    printf("Allowance        : ₹%.2f\n", allowance);
+    printf("-------------------------------------\n");
+    printf("Total Salary     : ₹%.2f\n", total_salary);
 
     return 0;
 }

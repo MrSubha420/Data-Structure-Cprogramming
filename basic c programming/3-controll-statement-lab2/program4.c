@@ -1,70 +1,43 @@
-
 /*
 -----------------------------------------------------------
 Problem Statement:
-Write a C program to implement a simple calculator using 
-if-else statements.
+Write a C program to determine the type of a triangle
+based on the lengths of its three sides using if-else statements.
 
-Description:
-The program should take two numbers and an operator (+, -, *, /, %)
-from the user and perform the corresponding arithmetic operation.
+Conditions:
+1. A triangle is valid if the sum of any two sides > third side.
+2. If all sides are equal → Equilateral
+3. If exactly two sides are equal → Isosceles
+4. If all sides are different → Scalene
 
 Example:
-Input:
-  Enter first number: 10
-  Enter second number: 5
-  Enter operator: *
-Output:
-  Result = 50
+Input:  a=5, b=5, c=5
+Output: Triangle is Equilateral
 -----------------------------------------------------------
 */
 
 #include <stdio.h>
 
 int main() {
-    float num1, num2, result;
-    char op;
+    int a, b, c;
 
-    // Input two numbers and operator
-    printf("Enter first number: ");
-    scanf("%f", &num1);
-    printf("Enter second number: ");
-    scanf("%f", &num2);
-    printf("Enter operator (+, -, *, /, %%): ");
-    scanf(" %c", &op);  // space before %c to ignore newline character
+    // Input three sides
+    printf("Enter three sides of triangle: ");
+    scanf("%d %d %d", &a, &b, &c);
 
-    // Perform operation using if-else
-    if (op == '+')
-        result = num1 + num2;
-    else if (op == '-')
-        result = num1 - num2;
-    else if (op == '*')
-        result = num1 * num2;
-    else if (op == '/') {
-        if (num2 != 0)
-            result = num1 / num2;
-        else {
-            printf("Error: Division by zero is not allowed.\n");
-            return 0;
-        }
+    // Check validity first
+    if ((a + b > c) && (a + c > b) && (b + c > a)) {
+        // Valid triangle
+        if (a == b && b == c)
+            printf("Triangle is Equilateral.\n");
+        else if (a == b || b == c || a == c)
+            printf("Triangle is Isosceles.\n");
+        else
+            printf("Triangle is Scalene.\n");
+    } else {
+        // Invalid triangle
+        printf("Not a valid triangle.\n");
     }
-    else if (op == '%') {
-        // Using integer type for modulo
-        int a = (int)num1, b = (int)num2;
-        if (b != 0)
-            result = a % b;
-        else {
-            printf("Error: Modulo by zero is not allowed.\n");
-            return 0;
-        }
-    }
-    else {
-        printf("Invalid operator!\n");
-        return 0;
-    }
-
-    // Display result
-    printf("Result = %.2f\n", result);
 
     return 0;
 }
