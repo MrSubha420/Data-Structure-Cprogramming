@@ -1,5 +1,8 @@
 //Delete a Node at a Given Index in a Circular Linked List using C
+<<<<<<< HEAD:6_linked list/prog4-circuler-linkedlist.c
 
+=======
+>>>>>>> 33468527c10a71555dd7d5118a2d8fac89450349:circulerll.c
 #include <stdio.h>
 #include <stdlib.h>
 struct Node

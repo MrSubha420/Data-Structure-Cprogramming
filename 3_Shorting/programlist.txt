@@ -1,0 +1,10 @@
+program1: implemrnt simple bubble short 
+program2: implement additie bubble short
+program3: implement quick short 
+program4 : implement selection short
+program5: implement inserttion short
+program6: implement marge short
+program7: implement counting short
+program8: implement radix short
+program9: implent max-heap short
+program10: implement min-heap short
