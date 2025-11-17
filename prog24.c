@@ -1,4 +1,4 @@
-//implement quick sort 
+//Insertion Sort Implementation in C (with pass-by-pass output).
 #include<stdio.h>
 #include<stdlib.h>
 //printing array
