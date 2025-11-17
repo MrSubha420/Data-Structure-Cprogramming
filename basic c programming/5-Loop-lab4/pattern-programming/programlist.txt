@@ -1,0 +1,99 @@
+1) Ractangle star pattern.
+2)triangle peramid star pattern.
+and inverted peramid pattern.
+3)rhombus star pattern.
+4)Dimond star pattern.
+5)butterfly star pattern.
+6)right half pyramid star pattern. 
+      
+           (i)                  (ii)                                       (iii)                         (iv)                      (v)                       (vi-1)
+
+      **********                  *                                       ********                    *                     *      *                       *
+      **********                 ***                                     ********                    ***                    **    **                       **
+      **********                *****                                   ********                    *****                   ***  ***                       ***
+      **********               *******                                 ********                      ***                    ********                       ****
+      **********              *********                               ********                        *                     ***  ***                       *****
+                                                                                                                            **    **                       ******
+						   							                    *      *                       ********
+6)Reverse right half peramid star pattern.
+6)left half pyramid star pattrern.
+6)reverse left half peramid star pattern.
+8)Hollow triangle pattern.
+7)Hollow ractangle pattern.
+9)"K" star pattern.
+
+          (vi-2)                     (vi-3)                    (vi-4)                    (viii)                  (vii)                        (ix)
+
+      *********                           *               *********                    *                     * * * * * *                   * * * * 
+      *******                            **                 *******                   *  *                   *         *                   * * *
+      *****                             ***                   *****                  *     *                 *         *                   * *
+      ***                              ****                     ***                 *        *               *         *                   *
+      *                               *****                       *                * * * * * * *             * * * * * *                   * *
+																	   * * *
+                                                                                                                                           * * * *
+
+10) Pascal pattern program in java.(numbers)
+           
+          1
+          1 1
+          1 2 1
+          1 3 3 1
+          1 4 6 4 1
+11) Print the following number pattern.
+
+            (i)                   (ii)                      (iii)                    (iv)                    (v)                        (vi)
+
+        1                     1                                1                      1                        1                        1 1 1 1 1             
+        1 2                   2 3                            1 2 1                  2 1 2                      2 2                      2 2 2 2 2
+        1 2 3                 4 5 6                         1 3 3 1               3 2 1 2 3                    3 3 3                    3 3 3 3 3
+        1 2 3 4               7 8 9 10                     1  4 6 4 1               2 1 2                      4 4 4 4                  4 4 4 4 4
+        1 2 3 4 5             11 12 13 14 15                                          1                        5 5 5 5 5                5 5 5 5 5
+        1 2 3 4 5 6
+
+            (vii)                   (viii)                      (ix)                  (x)                      (xi)
+
+         1 2 3 4 5                   1 2 3 4 5                1 0 1 0 1                1                   3 3 3 3 3 
+          2 3 4 5                    1 2 3 4                  0 1 0 1 0                1 0                 3 2 2 2 3
+           3 4 5                     1 2 3                    1 0 1 0 1                1 0 1               3 2 1 2 3
+             5                       1 2                      0 1 0 1 0                1 0 1 0             3 2 2 2 3
+           3 4 5                     1                        1 0 1 0 1                1 0 1 0 1           3 3 3 3 3
+          2 3 4 5                    1 2
+         1 2 3 4 5                   1 2 3
+                                     1 2 3 4
+                                     1 2 3 4 5
+
+12)
+1) right alphabatic triangle pattern 
+2) repeating alaphabatic pattern.
+3) Triangle character pattern.
+4) Print the following pattern .
+
+                   (i)                               (ii)                              ( iii )                              (iv)
+           
+           A                                     A                                         A                                A
+           A B                                   B B                                     A   B                              B C
+           A B C                                 C C C                                  A  B  C                             D E F
+           A B C D                               D D D D                               A  B  C  D                           G H I J
+           A B C D E                             E E E E E                           A   B  C  D  E                         K L M N O
+
+
+13) Java string pattern program: print the strings-
+   
+             i) Right sight triangle using string" SUBHADIP".
+             ii) Repeat Right triangle using string "SUBHADIP".
+             iii) Simple triangle using string "SUBHA".
+             iv)  left triangle using string "SUBHADIP".
+
+         (i)                              (ii)                          (iii)                               (iv)
+
+   S                                       S                                    S                       S U B H A D I P
+   S U                                     U U                                S   U                     S U B H A D I
+   S U B                                   B B B                            S   U   B                   S U B H A D
+   S U B H                                 H H H H H                      S  U    B   H                 S U B H A
+   S U B H A                               A A A A A A                  S  U   B   H    A               S U B H 
+   S U B H A D                             D D D D D D D                                                S U B
+   S U B H A D I                           I I I I I I I I                                              S U
+   S U B H A D I P                         P P P P P P P P P                                            S
+
+
+     
