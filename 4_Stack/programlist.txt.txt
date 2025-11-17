@@ -1,0 +1,2 @@
+program2: write a program in c implement stack using array
+program3: convert infix to postfix using stack

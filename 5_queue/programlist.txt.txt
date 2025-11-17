@@ -1,0 +1,5 @@
+program1: write a program in c implement simple queue using array
+program2: write a program in c implement simple queue using array and perfrom all the operation
+program3: write a program in c implement priority queue
+program4: C program to implement a Double-Ended Queue (Deque) using an array.
+program5: C program to implement a Double-Ended Queue (Deque) using an array with all operation.

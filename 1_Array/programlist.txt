@@ -1,0 +1,7 @@
+program1:
+program2:
+program3:
+program4:
+program5:write a program in c Delete any element from the arry.
+program6:write a program in c reverse the given array.
+program7:write a program in c find the average of the array elements.
