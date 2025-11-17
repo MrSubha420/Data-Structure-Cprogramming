@@ -1,4 +1,4 @@
-//implement quick sort 
+//implement selection sort 
 #include<stdio.h>
 #include<stdlib.h>
 //printing array
