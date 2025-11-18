@@ -1,0 +1,14 @@
+1)Fibonacci series print it.
+2) find the sum of series:
+    a> 1/1!+2/2!+3/3!.....+n/n!
+    b> 1*2*3+2*3*4+3*4*5+.....+n*(n+1)+(n+2).
+    c> a+a^2/2+a^3/3+a^4/4+.....+a^n/n. where a=2.
+    d> x^1-x^2+x^3-x^4+x^5-.....-x^20. where x=2.
+3) print the following series:
+    a> 1,12,123,1234,.....,123..n 
+    b> 1,11,111,1111,.....,111...1
+    c> 1,3,5,7.....n(odd numbers)
+    d> 2,4,6,8,10,....n(even numbers)
+    e>2,4,8,16,.....n
+4) program to find nth term of the given geometric progression(gp) series-
+         2,4,8,16,32,......   or tn=a1*r^(n-1) where a is first term , r is common ratio and n is the gp term will be find out. 

@@ -1,4 +1,4 @@
-// Write a program in count the total odd number present in between 1 to 100 
+// Write a program in count the total odd number present in between 1 to n 
 #include <stdio.h>
 
 int main() {
