@@ -21,6 +21,35 @@ Formula:
 -----------------------------------------------------------
 */
 
+/*
+  Algorithm: Salary Calculation Based on Performance
+
+Start
+Input the employee’s
+Basic salary (basic)
+Performance rating (rating)
+Initialize
+bonus = 0
+allowance = 0
+Calculate Bonus Based on Rating:
+If rating > 90 → bonus = 25% of basic
+Else if rating ≥ 80 → bonus = 20% of basic
+Else if rating ≥ 70 → bonus = 15% of basic
+Else if rating ≥ 60 → bonus = 10% of basic
+Else → bonus = 0
+Check Allowance Condition:
+If basic < 10000 → allowance = 500
+Otherwise → allowance = 0
+Calculate Total Salary:
+total_salary = basic + bonus + allowance
+Display
+Basic salary
+Bonus
+Allowance
+Total salary
+Stop
+*/
+
 #include <stdio.h>
 
 int main() {
