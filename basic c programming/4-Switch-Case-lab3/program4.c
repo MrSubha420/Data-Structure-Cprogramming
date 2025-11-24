@@ -1,103 +1,50 @@
 /*
------------------------------------------------------------
+
 Problem Statement:
-Create a mini-banking program with login system 
+Write a C program to convert temperature between Celsius and Fahrenheit.
+The user will choose:
+1) Celsius to Fahrenheit
+2) Fahrenheit to Celsius
+The program should convert the value based on the selected option.
 
-Steps:
-1. Ask for username and password.
-2. If both match (username = "subhadip", password = "12345"),
-   then allow banking operations using switch-case:
-   - Deposit Money
-   - Withdraw Money
-   - Check Balance
-   - Exit
------------------------------------------------------------
+Formula:
+Celsius to Fahrenheit: F = (C × 9/5) + 32
+Fahrenheit to Celsius: C = (F − 32) × 5/9
 
-Author: Subhadip Manna
------------------------------------------------------------
 */
 
 #include <stdio.h>
 
 int main() {
-    char u1, u2, u3, u4, u5, u6, u7, u8;   // username letters
-    char p1, p2, p3, p4, p5;               // password digits
+    float celsius, fahrenheit;
     int choice;
-    float balance = 0.0, amount;
 
-    printf("\n------------------------------------------");
-    printf("\n       Welcome to Secure Banking System   ");
-    printf("\n------------------------------------------");
+    printf("===== Temperature Converter =====\n");
+    printf("1. Celsius to Fahrenheit\n");
+    printf("2. Fahrenheit to Celsius\n");
+    printf("Enter your choice (1 or 2): ");
+    scanf("%d", &choice);
 
-    // Taking username
-    printf("\n\nEnter Username (subhadip): ");
-    scanf(" %c%c%c%c%c%c%c%c", &u1, &u2, &u3, &u4, &u5, &u6, &u7, &u8);
+    switch(choice) {
+        case 1:
+            printf("Enter temperature in Celsius: ");
+            scanf("%f", &celsius);
+            fahrenheit = (celsius * 9/5) + 32;
+            printf("Temperature in Fahrenheit: %.2f\n", fahrenheit);
+            break;
 
-    // Taking password
-    printf("Enter Password (12345): ");
-    scanf(" %c%c%c%c%c", &p1, &p2, &p3, &p4, &p5);
+        case 2:
+            printf("Enter temperature in Fahrenheit: ");
+            scanf("%f", &fahrenheit);
+            celsius = (fahrenheit - 32) * 5/9;
+            printf("Temperature in Celsius: %.2f\n", celsius);
+            break;
 
-    // Check username and password (no loops or arrays)
-    if (u1=='s' && u2=='u' && u3=='b' && u4=='h' && 
-        u5=='a' && u6=='d' && u7=='i' && u8=='p' &&
-        p1=='1' && p2=='2' && p3=='3' && p4=='4' && p5=='5') {
-
-        printf("\n Login Successful! Welcome, subhadip!\n");
-
-        // Display menu
-        printf("\n------------------------------------------");
-        printf("\nSelect an operation:\n");
-        printf("1. Deposit Money\n");
-        printf("2. Withdraw Money\n");
-        printf("3. Check Balance\n");
-        printf("4. Exit\n");
-        printf("------------------------------------------\n");
-        printf("Enter your choice: ");
-        scanf("%d", &choice);
-
-        // Perform selected operation using switch-case
-        switch (choice) {
-            case 1:
-                printf("Enter amount to deposit: ");
-                scanf("%f", &amount);
-                if (amount > 0) {
-                    balance = balance + amount;
-                    printf(" Successfully deposited ₹%.2f\n", amount);
-                    printf(" New Balance: ₹%.2f\n", balance);
-                } else {
-                    printf(" Invalid deposit amount!\n");
-                }
-                break;
-
-            case 2:
-                printf("Enter amount to withdraw: ");
-                scanf("%f", &amount);
-                if (amount <= 0) {
-                    printf(" Invalid withdrawal amount!\n");
-                } else if (amount > balance) {
-                    printf("Insufficient balance! Available: ₹%.2f\n", balance);
-                } else {
-                    balance = balance - amount;
-                    printf("Successfully withdrawn ₹%.2f\n", amount);
-                    printf(" New Balance: ₹%.2f\n", balance);
-                }
-                break;
-
-            case 3:
-                printf(" Current Balance: ₹%.2f\n", balance);
-                break;
-
-            case 4:
-                printf("\nThank you for using Secure Banking System. Goodbye!\n");
-                break;
-
-            default:
-                printf(" Invalid choice! Please select 1–4.\n");
-        }
-    } 
-    else {
-        printf("\n Login Failed! Invalid username or password.\n");
+        default:
+            printf("Invalid choice! Please run the program again.\n");
     }
 
     return 0;
 }
+
+
