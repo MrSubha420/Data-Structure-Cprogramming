@@ -26,6 +26,21 @@ switch(expression) {
 
 }
 
+
+Used Keywords: 
+  1. switch- 
+          Used to start the switch statement.
+          It checks the value of an expression.
+  2. case-
+          Used to match specific values inside the switch block.
+  3. break-
+          Used to exit from the switch after a case executes.
+          Prevents fall-through.
+  4. default - 
+           Executes when no case matches.
+
+
+
 */
 
 
