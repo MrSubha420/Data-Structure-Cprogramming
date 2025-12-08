@@ -130,7 +130,7 @@ int main() {
             printf("%d", i);
              // i is NOT updated → loop never stops
           }
-          ```
+      ```
  - - Condition is always true : 
    ```c
       while(1) {
