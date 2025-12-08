@@ -109,7 +109,38 @@ int main() {
  - Defination : An infinite loop is a loop that never stops running because its termination condition is never met or no condition is provided.
 
  - Syntax: 
- - - condition does not given
+ - - condition does not given: 
+      ```c
+        for(;;) {
+            printf("Hi");
+         }
+      ```
+ - - Variable inside condition never updates : 
+       ```c
+      int i;
+        for(i=0;i<5;) {
+            printf("Hi");
+         }
+      ```
+      or 
+
+      ```c
+      int i = 0;
+        while(i < 5) {
+            printf("%d", i);
+             // i is NOT updated → loop never stops
+          }
+          ```
+ - - Condition is always true : 
+   ```c
+      while(1) {
+         printf("Hello");
+       }
+   ```
+   
+   
+
+
 
 
 
