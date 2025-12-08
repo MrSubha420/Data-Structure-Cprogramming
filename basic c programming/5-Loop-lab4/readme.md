@@ -265,18 +265,164 @@ int main() {
 // output = ?
 ```
 - Q3 : 
+```c
+#include <stdio.h>
 
+int main() {
+    int i = 1;
+    while(i <= 5) {
+        printf("%d ", i++);
+        i++;
+    }
+    return 0;
+}
 
+//output = ?
 
+```
+- Q4 :
+```c
+#include <stdio.h>
 
+int main() {
+    int i, j;
+    for(i = 0, j = 10; i < 5; i++, j--) {
+        printf("i=%d  j=%d\n", i, j);
+    }
+    return 0;
+}
 
+// output = ?
 
-   
-   
+```
 
+## 11. Nested loop 
+- Defination : A nested loop is a loop inside another loop.
+- - The outer loop controls the number of times the inner loop runs.
+- - The inner loop executes completely for each iteration of the outer loop.
+- - Nested loops can be used with for, while, or do-while loops.
 
+- Syntax : 
+- - using for loop:
+```c
+for(initialization; condition; increment) {
+    for(initialization; condition; increment) {
+        // inner loop statements
+    }
+    // outer loop statements (optional)
+}
 
+```
+Example: 
+```c
+//Print a 3x3 star pattern
 
+#include <stdio.h>
 
+int main() {
+    int i, j;
 
+    for(i = 1; i <= 3; i++) {           // outer loop
+        for(j = 1; j <= 3; j++) {       // inner loop
+            printf("* ");
+        }
+        printf("\n");                    // new line after inner loop
+    }
 
+    return 0;
+}
+
+/*
+output: 
+
+* * *
+* * *
+* * *
+
+*/
+
+```
+
+- - using while loop:
+```c
+while(condition) {          // outer loop
+    while(condition) {      // inner loop
+        // inner loop statements
+    }
+    // outer loop statements
+}
+
+```
+Example: 
+```c
+//Print a 3x3 number pattern
+
+#include <stdio.h>
+
+int main() {
+    int i = 1, j;
+
+    while(i <= 3) {            // outer loop
+        j = 1;
+        while(j <= 3) {        // inner loop
+            printf("%d ", j);
+            j++;
+        }
+        printf("\n");
+        i++;
+    }
+
+    return 0;
+}
+
+/*
+output: 
+
+1 2 3
+1 2 3
+1 2 3
+
+*/
+
+```
+
+- - using do-while loop:
+```c
+do {                         // outer loop
+    do {                     // inner loop
+        // inner loop statements
+    } while(condition);      // inner loop condition
+} while(condition);          // outer loop condition
+
+```
+Example: 
+```c
+//Print a 2x3 number pattern
+
+#include <stdio.h>
+
+int main() {
+    int i = 1, j;
+
+    do {                          // outer loop
+        j = 1;
+        do {                      // inner loop
+            printf("%d ", j);
+            j++;
+        } while(j <= 3);          // inner loop condition
+        printf("\n");
+        i++;
+    } while(i <= 2);               // outer loop condition
+
+    return 0;
+}
+
+/*
+output: 
+
+1 2 3
+1 2 3
+
+*/
+
+```
