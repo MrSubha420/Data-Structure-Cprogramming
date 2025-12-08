@@ -21,6 +21,18 @@ for (initialization; condition; step) {
    /* statements */
 }
 ```
+- Example- 
+```c
+#include <stdio.h>
+
+int main() {
+    int i;
+    for(i = 0; i < 5; i++) {
+        printf("%d\n", i);
+    }
+    return 0;
+}
+```
 - Common keywords: `for`, `break`, `continue`
 - Typical use: indexed iteration with increment value (e.g., for (int i = 0; i < n; i++))
 - Typical use: indexed iteration with decrement value (e.g., for (int i = n; i > 0; i--))
@@ -33,6 +45,22 @@ while (condition) {
    /* statements */
 }
 ```
+- Example- 
+```c
+#include <stdio.h>
+
+int main() {
+    int i = 0;            // initialization
+
+    while(i < 5) {        // condition
+        printf("%d\n", i);
+        i = i + 2;        // increment
+    }
+
+    return 0;
+}
+
+```
 - Common keywords: `while`, `break`, `continue`
 - Typical use: repeat until a condition becomes false (unknown number of iterations)
 
@@ -44,10 +72,26 @@ do {
    /* statements */
 } while (condition);
 ```
+- Example- 
+```c
+#include <stdio.h>
+
+int main() {
+    int i = 0;              // initialization
+
+    do {
+        printf("%d\n", i);  // loop body
+        i = i + 2;          // increment
+    } while(i < 5);         // condition
+
+    return 0;
+}
+
+
+```
 - Common keywords: `do`, `while`, `break`, `continue`
 - Typical use: menu loops or when the body must execute at least once
 
-// ...existing code...
 
 ## 6. Comparison table: for vs while vs do-while
 
@@ -56,4 +100,6 @@ do {
 | Condition check | Entry-controlled (checked before each iteration) | Entry-controlled (checked before each iteration) | Exit-controlled (checked after the body) |
 | Guaranteed execution | No (may run 0 times) | No (may run 0 times) | Yes (runs at least once) |
 | Typical use | Known/finite iteration count, indexed loops | Unknown count, repeat until condition | Menus, input validation — body must run once |
+
+
 
