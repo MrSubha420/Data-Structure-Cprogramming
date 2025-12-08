@@ -1,28 +1,20 @@
-// count prime number present 1 to n 
+//C Program: Sum of All Odd Numbers from 1 to n
+
 #include <stdio.h>
 
 int main() {
-    int n, i, j, count = 0, isPrime;
+    int n, sum = 0;
 
     printf("Enter the value of n: ");
     scanf("%d", &n);
 
-    for (i = 2; i <= n; i++) {  
-        isPrime = 1;  // assume number is prime
-
-        for (j = 2; j * j <= i; j++) {  // check divisors
-            if (i % j == 0) {
-                isPrime = 0;  // not prime
-                break;
-            }
-        }
-
-        if (isPrime == 1) {
-            count++;  // count prime number
+    for (int i = 1; i <= n; i++) {
+        if (i % 2 != 0) {   // Check if the number is odd
+            sum += i;
         }
     }
 
-    printf("Total prime numbers between 1 and %d = %d\n", n, count);
+    printf("Sum of all odd numbers between 1 to %d is: %d\n", n, sum);
 
     return 0;
 }

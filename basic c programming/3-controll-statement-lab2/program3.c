@@ -1,3 +1,19 @@
+/*
+Problem Statement:
+
+Write a C program that takes three integer values as the sides of a triangle and determines whether the given sides form a valid triangle.
+If the sides form a valid triangle, the program should classify the triangle as:
+
+Equilateral (all three sides equal),
+
+Isosceles (any two sides equal), or
+
+Scalene (all three sides different).
+
+If the sides do not satisfy the triangle inequality condition, the program should display that the triangle is not valid.
+
+*/
+
 #include <stdio.h>
 
 int main() {

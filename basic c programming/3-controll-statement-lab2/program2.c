@@ -1,59 +1,34 @@
-/*
------------------------------------------------------------
-Problem Statement:
-Write a C program to implement student grade calculation
-based on the following table.
+/* Problem Statement:
+Write a program to check whether a given year is a leap year or not.
 
-Grade Criteria:
------------------------------------------------------------
-EX  - Marks > 90
-O   - Marks between 80 and 90
-A   - Marks between 70 and 80
-B   - Marks between 60 and 70
-C   - Marks between 50 and 60
-FAIL - Marks < 50
------------------------------------------------------------
+Algorithm:
+Step 1: Start
+Step 2: Read the year from the user
+Step 3: If (year % 400 == 0) then
+            It is a leap year
+        Else if (year % 4 == 0 AND year % 100 != 0) then
+            It is a leap year
+        Else
+            It is NOT a leap year
+Step 4: Display the result
+Step 5: Stop
 
-Input:
-- The program should take CGPA as input from the user.
+  */
 
-Process:
-- Calculate marks using the formula:
-      marks = (10 - 0.75) * cgpa
-
-Output:
-- Display the calculated marks and corresponding grade.
------------------------------------------------------------
-*/
 
 #include <stdio.h>
 
 int main() {
-    float cgpa, marks;
+    int year;
 
-    // Input CGPA from user
-    printf("Enter your CGPA: ");
-    scanf("%f", &cgpa);
+    printf("Enter a year: ");
+    scanf("%d", &year);
 
-    // Calculate marks using the given formula
-    marks = (10 - 0.75) * cgpa;
-
-    // Display calculated marks
-    printf("Calculated Marks: %.2f\n", marks);
-
-    // Determine grade based on marks
-    if (marks > 90)
-        printf("Grade: EX\n");
-    else if (marks >= 80 && marks <= 90)
-        printf("Grade: O\n");
-    else if (marks >= 70 && marks < 80)
-        printf("Grade: A\n");
-    else if (marks >= 60 && marks < 70)
-        printf("Grade: B\n");
-    else if (marks >= 50 && marks < 60)
-        printf("Grade: C\n");
-    else
-        printf("Grade: FAIL\n");
+    if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
+        printf("%d is a leap year.\n", year);
+    } else {
+        printf("%d is not a leap year.\n", year);
+    }
 
     return 0;
 }
