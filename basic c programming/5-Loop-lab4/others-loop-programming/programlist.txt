@@ -1,3 +1,8 @@
  Program 1 : Write a program in count the total odd number present in between 1 to n .
- Program 2 : count prime number present 1 to n.
- Program 3 : C Program: Sum of All Odd Numbers from 1 to n.
+ Program 2 : Sum of All Odd Numbers from 1 to n
+ Program 3 : Write a program that takes an integer as input and calculates the sum of its digits using a while loop. For example, if the user enters 538, the program should output 16 (5 + 3 + 8).
+ program 4 : Write a C program to input an integer and print its reverse.
+ program 5 : 
+ program 6 :
+ program 7 :
+ program 8 : Write a C program to count how many prime numbers exist between 1 and a given number n. A prime number is a number greater than 1 that has no divisors other than 1 and itself.
