@@ -32,6 +32,8 @@ int main() {
     }
     return 0;
 }
+
+// output : 0 1 2 3 4
 ```
 - Common keywords: `for`, `break`, `continue`
 - Typical use: indexed iteration with increment value=1 (e.g., for (int i = 0; i < n; i++))
@@ -64,6 +66,8 @@ int main() {
     return 0;
 }
 
+// 0 2 4
+
 ```
 - Common keywords: `while`, `break`, `continue`
 - Typical use: repeat until a condition becomes false (unknown number of iterations)
@@ -90,7 +94,7 @@ int main() {
 
     return 0;
 }
-
+//output : 0 2 4
 
 ```
 - Common keywords: `do`, `while`, `break`, `continue`
@@ -137,6 +141,136 @@ int main() {
          printf("Hello");
        }
    ```
+
+## 8. Break statement in c.
+- Defination: The Break statement is used to exit the loop irrespective of wheather the break is encountered.
+- Example: 
+ ```c
+ #include <stdio.h>
+ int main(){
+   int i;
+  for (i = 1; i<100;i++){
+   printf("%d \n",i);
+   if(i==5){
+      break;
+   }
+  }
+ } 
+
+ // output: 1 2 3 4 5
+```
+## 9. Continue statement in c. 
+- Defination : The continue statament is used to immediately move next itaration or skip everything in the current itaration.
+- Example:
+```c
+#include <stdio.h>
+
+int main() {
+    for(int i = 1; i <= 5; i++) {
+        
+        if(i == 3) {
+            continue;   // skip this iteration
+        }
+
+        printf("%d\n", i);
+    }
+
+    return 0;
+}
+
+//output: 1 2 4 5
+```
+## 10 Double Variable loop- 
+- Defination: A double variable loop is a loop where two variables are initialized, updated, and used together inside the same loop header.
+- Characteristics : if double condition are there used the latest condition like(cod1. , cond2.) used cond2. because comma operator , evaluates all expressions from left to right.
+- Syntax : 
+```c
+for(i = start1, j = start2; condition; update1, update2)
+{
+   //statements
+}
+```
+- Example:
+```c 
+#include <stdio.h>
+
+int main() {
+    int i, j;
+    for(i = 0, j = 1; i < 2, j < 3; i++, j++) {
+        printf("%d \n", i*j);
+    }
+    return 0;
+}
+//output: 0 2
+```
+or
+```c
+#include <stdio.h>
+
+int main() {
+    int i, j;
+    for(i = 0, j = 1; i < 4; i++, j++) {
+        printf("%d \n", i*j);
+    }
+    return 0;
+}
+//output : 0 2 6 12
+```
+
+or 
+```c
+#include <stdio.h>
+
+int main() {
+    int i, j;
+    for(i = 0, j = 1; i < 2, j < 5; i++, j++) {
+        printf("%d \n", i*j);
+    }
+    return 0;
+}
+//output : ?
+```
+## Enquary questions- ( find the output )
+- Q1 : 
+```c
+  int main() {
+   int skip=3;
+    for(int i = 1; i <= 10; i++) {
+        
+        if(i != skip) {
+            continue;   // skip this iteration
+        }
+        else{
+         printf("%d\n", i);
+        }
+    }
+
+    return 0;
+   }
+
+ //output : ?  
+ ```
+- Q2 : 
+```c
+#include <stdio.h>
+
+int main() {
+    int i = 0;
+    for( ; ; i++) {
+        if(i == 4) break;
+        printf("%d ", i);
+    }
+    return 0;
+}
+// output = ?
+```
+- Q3 : 
+
+
+
+
+
+
    
    
 
