@@ -46,3 +46,14 @@ do {
 ```
 - Common keywords: `do`, `while`, `break`, `continue`
 - Typical use: menu loops or when the body must execute at least once
+
+// ...existing code...
+
+## 6. Comparison table: for vs while vs do-while
+
+| Feature | for loop | while loop | do-while loop |
+|---|---:|---:|---:|
+| Condition check | Entry-controlled (checked before each iteration) | Entry-controlled (checked before each iteration) | Exit-controlled (checked after the body) |
+| Guaranteed execution | No (may run 0 times) | No (may run 0 times) | Yes (runs at least once) |
+| Typical use | Known/finite iteration count, indexed loops | Unknown count, repeat until condition | Menus, input validation — body must run once |
+
