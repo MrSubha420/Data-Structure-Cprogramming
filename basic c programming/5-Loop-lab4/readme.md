@@ -34,9 +34,13 @@ int main() {
 }
 ```
 - Common keywords: `for`, `break`, `continue`
-- Typical use: indexed iteration with increment value (e.g., for (int i = 0; i < n; i++))
-- Typical use: indexed iteration with decrement value (e.g., for (int i = n; i > 0; i--))
-
+- Typical use: indexed iteration with increment value=1 (e.g., for (int i = 0; i < n; i++))
+- Typical use: indexed iteration with decrement value=1 (e.g., for (int i = n; i > 0; i--))
+- Typical use: indexed iteration with increment value=2 (e.g., for (int i = n; i > 0; i=i+2))
+- Typical use: indexed iteration with decrement value (e.g., for (int i = n; i > 0; ){
+   //statements
+   i=i+2;
+})
 ## 4. while loop
 - Definition: Repeats a block while a condition is true; checks condition before each iteration (entry-controlled).
 - Syntax:
