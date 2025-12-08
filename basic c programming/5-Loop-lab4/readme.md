@@ -1,4 +1,4 @@
-# README — Loops in C
+# Loops in C
 
 ## 1. What is a Loop (minimum 5 points)
 - A loop is a control structure that repeats a block of code multiple times.
@@ -104,6 +104,14 @@ int main() {
 | Condition check | Entry-controlled (checked before each iteration) | Entry-controlled (checked before each iteration) | Exit-controlled (checked after the body) |
 | Guaranteed execution | No (may run 0 times) | No (may run 0 times) | Yes (runs at least once) |
 | Typical use | Known/finite iteration count, indexed loops | Unknown count, repeat until condition | Menus, input validation — body must run once |
+
+## 7. Infinite loop 
+ - Defination : An infinite loop is a loop that never stops running because its termination condition is never met or no condition is provided.
+
+ - Syntax: 
+ - - condition does not given
+
+
 
 
 
