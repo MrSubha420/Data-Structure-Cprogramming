@@ -28,4 +28,25 @@
    ```
 ## 3. Types of Function ?
 - Function have two types :
-- - **User Defined Function:** 
+- - **User Defined Function:** This type of Function created by the programmer. So he or she can used same "Block of code" declare only one time and used it multiple times.
+Example:
+```c
+#include<stdio.h>
+int main(){
+int a,b;   
+int sum(int,int);// Function prototyping
+printf("Enter the value of a , b :");
+scanf("%d%d",&a,&b);
+int sum=add(a,b);// Function call
+printf("/n addition of %d and %d = %d",a,b,sum);
+return 0;
+}
+
+//Function Defination
+int add(int x , int y){
+   int sum=0;
+   sum=sum+x+y;
+   return sum;
+}
+
+```
