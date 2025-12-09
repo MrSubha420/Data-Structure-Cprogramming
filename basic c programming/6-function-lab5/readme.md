@@ -34,11 +34,11 @@ Example:
 #include<stdio.h>
 int main(){
 int a,b;   
-int sum(int,int);// Function prototyping
+int add(int,int);// Function prototyping
 printf("Enter the value of a , b :");
 scanf("%d%d",&a,&b);
 int sum=add(a,b);// Function call
-printf("/n addition of %d and %d = %d",a,b,sum);
+printf("\n Addition of %d and %d = %d",a,b,sum);
 return 0;
 }
 
@@ -50,3 +50,9 @@ int add(int x , int y){
 }
 
 ```
+- - **Libary Function:** This type of function already predefined by c language developer which are help to the programmer . And before you used we are need to include the header file such as scanf(),printf() which are avilable in <stdio.h> file.
+
+## 4. Function Prototyping in c :
+- Defination: 
+- - It is also called signature of a function.
+- - It is done to give 
