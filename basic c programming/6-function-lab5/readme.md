@@ -10,7 +10,7 @@
     return_type function_name(argument_list);
     -----------  ------------  -------------
        int         sum        (int a , int b);
-   ```
+    ```
 
 - Function Defination : It contains the actual statements which are to be executed.
 - - Syntax Of function Defination :
