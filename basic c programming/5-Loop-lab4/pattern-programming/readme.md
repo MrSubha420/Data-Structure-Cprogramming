@@ -25,3 +25,14 @@
       * * * * *
 - [Solution3](https://github.com/MrSubha420/Data-Structure-Cprogramming/blob/main/basic%20c%20programming/5-Loop-lab4/pattern-programming/program3.c)          
 
+## Q4: Print Diamond pattern 
+              *
+             ***
+            *****
+           *******
+          *********
+           *******
+            *****
+             ***
+              *   
+- [sSolution4](https://github.com/MrSubha420/Data-Structure-Cprogramming/blob/main/basic%20c%20programming/5-Loop-lab4/pattern-programming/program4.c)              
