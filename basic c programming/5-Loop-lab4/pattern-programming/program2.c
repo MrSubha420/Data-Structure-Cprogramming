@@ -5,8 +5,16 @@ print triangle star pattern :
      * * *
     * * * *
    * * * * *
-   
- */
+
+Algorithm:
+1. Start
+2. Initialize an integer variable n to define the number of rows.
+3. Use an outer loop that runs from 1 to n (for each row).
+4. Inside the outer loop, calculate the number of spaces needed for the current row.
+5. Use an inner loop to print the calculated number of spaces.
+6. Use another inner loop to print stars followed by a space for the current row number.   
+ 
+*/
 
 #include <stdio.h>
 
@@ -43,10 +51,17 @@ print inverted peramid triangle star pattern :
   * * * 
    * * 
     * 
-   
- */
+    
+Algorithm:
+1. Start
+2. Initialize an integer variable n to define the number of rows.
+3. Use an outer loop that runs from 1 to n (for each row).
+4. Inside the outer loop, calculate the number of spaces needed for the current row.
+5. Use an inner loop to print the calculated number of spaces.
+6. Use another inner loop to print stars followed by a space for the decreasing number of stars in each row.
+*/
 
-/* 
+
  #include <stdio.h>
 
 int main() {
@@ -71,4 +86,4 @@ int main() {
 
     return 0;
 }
-*/
+

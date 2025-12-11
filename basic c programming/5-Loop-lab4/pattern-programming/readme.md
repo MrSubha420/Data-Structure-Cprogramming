@@ -6,4 +6,22 @@
            * * * * *
            * * * * *
            * * * * *
- - [Solution](https://github.com/MrSubha420/Data-Structure-Cprogramming/blob/main/basic%20c%20programming/5-Loop-lab4/pattern-programming/program1.c)      
+ - [Solution1](https://github.com/MrSubha420/Data-Structure-Cprogramming/blob/main/basic%20c%20programming/5-Loop-lab4/pattern-programming/program1.c) 
+
+## Q2:triangle peramid star pattern . and inverted peramid pattern.  
+           
+           *                    * * * *   
+          * *                    * * *
+         * * *                    * *
+        * * * *                    *
+
+- [Solution2](https://github.com/MrSubha420/Data-Structure-Cprogramming/blob/main/basic%20c%20programming/5-Loop-lab4/pattern-programming/program2.c)
+
+## Q3: rhombus star pattern.
+          * * * * *
+         * * * * *
+        * * * * *
+       * * * * *
+      * * * * *
+- [Solution3](https://github.com/MrSubha420/Data-Structure-Cprogramming/blob/main/basic%20c%20programming/5-Loop-lab4/pattern-programming/program3.c)          
+
