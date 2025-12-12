@@ -35,4 +35,17 @@
             *****
              ***
               *   
-- [sSolution4](https://github.com/MrSubha420/Data-Structure-Cprogramming/blob/main/basic%20c%20programming/5-Loop-lab4/pattern-programming/program4.c)              
+- [Solution4](https://github.com/MrSubha420/Data-Structure-Cprogramming/blob/main/basic%20c%20programming/5-Loop-lab4/pattern-programming/program4.c)
+
+## Q5:butterfly star pattern.
+
+             *     *
+             **   **
+             *** ***
+             *******
+             *** ***
+             **   **
+             *     *
+
+- [Solution5]()             
+             
