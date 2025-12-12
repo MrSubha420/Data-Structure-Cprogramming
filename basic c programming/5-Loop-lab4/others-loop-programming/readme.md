@@ -13,12 +13,13 @@
  - [Solution4](https://github.com/MrSubha420/Data-Structure-Cprogramming/blob/main/basic%20c%20programming/5-Loop-lab4/others-loop-programming/program4.c)
 
  ## program 5 : write a C program check the given number is paindrome or not.
- - [Solution5]()
+ - [Solution5](https://github.com/MrSubha420/Data-Structure-Cprogramming/blob/main/basic%20c%20programming/5-Loop-lab4/others-loop-programming/program6.c)
 
  ## program 6 : Write a C program check the given number is prime or not prime. Hint-A prime number is a number greater than 1 that has no divisors other than 1 and itself.
- - [Solution6]()
+ - [Solution6](https://github.com/MrSubha420/Data-Structure-Cprogramming/blob/main/basic%20c%20programming/5-Loop-lab4/others-loop-programming/program6.c)
 
  ## program 7 :
- - [Solution7]()
+ - [Solution7](https://github.com/MrSubha420/Data-Structure-Cprogramming/blob/main/basic%20c%20programming/5-Loop-lab4/others-loop-programming/program7.c)
 
- ## program 8 : Write a C program to count how many prime numbers exist between 1 and a given number n. 
+ ## program 8 : 
+ - [Solution8](https://github.com/MrSubha420/Data-Structure-Cprogramming/blob/main/basic%20c%20programming/5-Loop-lab4/others-loop-programming/program8.c).
