@@ -47,5 +47,8 @@
              **   **
              *     *
 
-- [Solution5]()             
+- [Solution5](https://github.com/MrSubha420/Data-Structure-Cprogramming/blob/main/basic%20c%20programming/5-Loop-lab4/pattern-programming/program5.c)
+
+## Q6:
+
              
