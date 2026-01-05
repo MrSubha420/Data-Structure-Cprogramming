@@ -56,3 +56,19 @@ int add(int x , int y){
 - Defination: 
 - - It is also called signature of a function.
 - - It is done to give 
+
+### program1. Write a program implement a simple calculator using the given function 
+  - - plus(): add two number 
+  - - minus(): substract two number
+  - - devide(): devide the number 
+  - - multiply() : multiplication of two number
+  - - modulo()  : find reminder
+  - - power() : find a^b = ?
+
+- [Solution1:]() 
+
+### program2: write a c program create function name as find_fact() used to find factorial given number.
+- [Solution2:]() 
+
+### program3: write a c program create a function check the given number strong number or not.
+- [Solution3:]()
