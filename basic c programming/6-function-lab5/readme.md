@@ -65,10 +65,10 @@ int add(int x , int y){
   - - modulo()  : find reminder
   - - power() : find a^b = ?
 
-- [Solution1:]() 
+- [Solution1:](https://github.com/MrSubha420/Data-Structure-Cprogramming/blob/main/basic%20c%20programming/6-function-lab5/program1.c) 
 
 ### program2: write a c program create function name as find_fact() used to find factorial given number.
-- [Solution2:]() 
+- [Solution2:](https://github.com/MrSubha420/Data-Structure-Cprogramming/blob/main/basic%20c%20programming/6-function-lab5/program2.c) 
 
 ### program3: write a c program create a function check the given number strong number or not.
-- [Solution3:]()
+- [Solution3:](https://github.com/MrSubha420/Data-Structure-Cprogramming/blob/main/basic%20c%20programming/6-function-lab5/program3.c)
