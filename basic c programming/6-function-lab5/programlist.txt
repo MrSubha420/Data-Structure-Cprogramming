@@ -1,0 +1,21 @@
+program1. Write a program implement a simple calculator using the given function 
+     - plus(): add two number 
+     - minus(): substract two number
+     - devide(): devide the number 
+     - multiply() : multiplication of two number
+     - modulo()  : find reminder
+     - power() : find a^b = ?
+
+program2. write a c program create function name as find_fact() used to find factorial given number.
+
+program3. write a c program create a function check the given number strong number or not.
+
+program4. Write a c program to calculate the monthly electricity bill of a consumer.
+Requirements:
+         - Accept consumer name and number of units consumed.
+         - Use the following tariff:
+              First 100 units → ₹6/unit
+              Next 100 units → ₹8/unit
+              Remaining units → ₹10/unit
+         -Add a fixed meter charge of ₹50.
+         - Display a formatted bill summary.
